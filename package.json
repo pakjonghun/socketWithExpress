@@ -1,0 +1,22 @@
+{
+  "name": "socket-express",
+  "version": "1.0.0",
+  "description": "zoom clone coding with nomad",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakjonghun/socketWithExpress.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.18.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "pug": "^3.0.2"
+  }
+}
