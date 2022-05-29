@@ -11,12 +11,20 @@ html(lang="en")
     header
       h1 hi
     main 
-      form(id="nickForm") 
-        input(id="nickInput")
-        button(id="nickButton") nick
-      h2 welcome
-      ul(id="ul")
-      form(id="form")
-        input(type="text" id="input")
-        button(id="button") click
-    script(src="/public/js/app.js")
+      div#welcome  
+        form#roomForm
+          input#roomInput(placeholder="room name",required,type="text")
+          button enter room
+      div#rooms
+        ul
+      div#room  
+        form#nameForm
+          input#nameInput
+          button name
+        h3
+        ul 
+        form#messageForm
+          input#messageInput
+          button send
+    script(defer src="/socket.io/socket.io.js")
+    script(defer src="/public/js/app.js")
